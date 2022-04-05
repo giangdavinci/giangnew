@@ -32,7 +32,7 @@ class khachhang{
 				<<"So cmt: "<<socmt<<endl
 				<<"Ho khau: "<<hokhau<<endl;
 		}
-		int thang(){
+		int lay_thang(){
 			return ns.thang;
 		}
  		int lay(){
@@ -64,16 +64,16 @@ int main(int argc, char *argv[])
 				for(int i = 0; i < n; i++){
 					cout<<"Nhap khach hang thu: "<< i + 1<<endl;
 					a[i].nhap(); 
+					}
 			system("cls");
 			for(int i = 0; i < n; i++){
 				cout<<"------------------------------"<<endl;
 				a[i].xuat();
 				}
 			}
-			}
 			else if( luachon == 3 ){
 				for(int i = 0; i < n; i++){
-					if(a[i].thang()==12 ){
+					if(a[i].lay_thang()==12 ){
 						a[i].xuat();
 					}
 				}
